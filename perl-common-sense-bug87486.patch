@@ -1,0 +1,15 @@
+diff -aurN common-sense-3.73.orig/Makefile.PL common-sense-3.73/Makefile.PL
+--- common-sense-3.73.orig/Makefile.PL	2014-06-30 21:44:11.940635714 +0200
++++ common-sense-3.73/Makefile.PL	2014-06-30 21:44:56.666102587 +0200
+@@ -8,10 +8,7 @@
+ 	           },
+     NAME        => "common::sense",
+     VERSION_FROM => "sense.pm.PL",
+-    PM          => {
+-       "sense.pm"  => '$(INST_ARCHLIB)/common/sense.pm',
+-       "sense.pod" => '$(INST_LIB)/common/sense.pod',
+-    },
++    PM          => { "sense.pm" => '$(INST_LIB)/common/sense.pm' },
+     clean       => { FILES => "sense.pm" },
+ );
+ 
